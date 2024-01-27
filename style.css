@@ -4,6 +4,7 @@ body {
     font-family: 'Courier New', monospace;
     background-color: #000;
     color: #FFF;
+    overflow: hidden;
 }
 
 
@@ -27,6 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 
