@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&display=swap');
+
+:root {
+    --cor-de-fundo: #f5f5f5;
+    --cor-do-texto: #000000b9;
+    --cor-do-titulo: #333;
+    --cor-texto-suave: #666;
+    --tamanho-do-titulo: 36px;
+    --tamanho-do-texto: 16px;
+    --tamanho-letras-miudas: 12px;
+    --fonte-texto: "Anonymous Pro", monospace;
+    --fonte-titulo: 'Quicksand', sans-serif;
+    
+
+}
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--cor-do-texto);
+    box-sizing: border-box;
+}
+
+
+.menu-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.name-header {
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    color: #666;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.name-header:hover {
+    color: var(--cor-do-titulo);
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.menu-list li {
+    list-style: none;
+    color: #666;  
+    margin-right: 1em;  
+}
+
+.menu-list li:hover {
+    color: var(--cor-do-texto);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.menu-list a {
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.surprise {
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    color: var(--cor-do-texto);
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.curriculo {
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    color: var(--cor-do-texto);
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.curriculo:hover {
+    color: var(--cor-do-titulo);
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.surprise:hover {
+    color: var(--cor-do-titulo);
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.main-content {
+    width: 95%;
+    margin: 3%
+}
+
+.main-title {
+    color: var(--cor-do-titulo);
+    font-size: 80px; /* Tamanho do título */
+    font-weight: 100;
+    font-family: var(--fonte-titulo);
+    margin: 0;
+    text-align: left;
+}
+
+.main-text {
+    font-size: var(--tamanho-do-texto);
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-texto);
+    width: 50%;
+    
+}
+
+.gameover-text {
+font-size: var(--tamanho-letras-miudas);
+line-height: 0.2;
+font-family: var(--fonte-titulo);
+color: var(--cor-texto-suave);
+}
+
+/* section academica */
+
+.academica-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10em;
+    margin: 1em 5em 1em 8em;
+    justify-content: space-evenly;
+}
+.academica-image {
+    width: 220px;
+    height: 110px;
+    border-radius: 5px;
+    margin-top: 1em;
+
+}
+
+.academica-title,
+.academica-description {
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    color: var(--cor-do-titulo);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 100;
+
+}
+
+.academica-title:hover,
+.academica-description:hover {
+    color: var(--cor-do-texto);
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
+.academica-image:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: brightness(60%);
+}
+
+
+.separator {
+    background-color: #bebdbd;
+    width: 90vw;
+    margin-top: 3em;
+}
+
+/* skills */
+
+.skill {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 25%
+
+}
+
+.fa-brands,
+.fa-solid {
+   font-size: 2.5em;
+   color: var(--cor-texto-suave)
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+    color: var(--cor-do-titulo);
+    transition: 0.5s;
+}
+
+.skill-name{
+    color: var(--cor-texto-suave);
+    font-family: var(--fonte-titulo);
+}
+
+.skill-title {
+    text-transform: uppercase;
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    color: var(--cor-do-titulo);
+    margin:  0.5em 0 1em 6em;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+
+}
+
+
+.skill:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.skills {
+    display: flex;
+}
+
+/* section projetos */
+
+.section-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-do-titulo);
+    margin-bottom: 1em;
+    font-weight: 400;
+    margin: 1em 0 1em 6em;
+}
+
+.project {
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: end;
+    margin: 1em 2em 1em 8em;
+}
+.project-image {
+width: 400px;
+height: 200px;
+border-radius: 5px;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: brightness(60%);
+    
+}
+
+.project-title {
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-do-titulo);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 2.5em;
+    font-weight: 100;
+}
+
+.project-link {
+    font-size: 19px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-do-texto);
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.project-link:hover {
+    color: var(--cor-do-titulo);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+/* contact */
+
+.contact {
+    display: flex;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    text-align: end;
+    margin-top: 2em;
+    margin-left: 60%;
+    gap: 1em;
+}
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 2em 6em;
+    }
+
+    .form input {
+        width: 400px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid var(--cor-texto-suave);
+        border-radius: 5px;
+        font-family: var(--fonte-texto);
+        font-size: var(--cor-do-texto);
+    }
+
+    .form textarea {
+        width: 400px;
+        height: 130px;
+        border: none;
+        border-bottom: 1px solid var(--cor-texto-suave);
+        border-radius: 5px;
+        font-size: var(--tamanho-do-texto);
+    }
+
+    .form label {
+        font-family: var(--fonte-titulo);
+        font-size: 23px;
+        color: var(--cor-do-titulo);
+    }
+
+    .form button {
+        width: 100px;
+        height: 40px;
+        background-color: transparent;
+        color: var(--cor-do-texto);
+        border: none;
+        border-radius: 5px;
+        font-family: var(--fonte-titulo);
+        font-size: 25px;
+        cursor: pointer;
+        margin-left: -0.5em;
+    }
+
+    .form button:hover {
+        color: var(--cor-do-titulo);
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+    /* footer */
+
+    footer {
+        display: flex;
+        justify-content: right;
+        align-items: left;
+        color: var(--cor-do-texto);
+        height: 50px;
+        font-family: var(--fonte-titulo);
+        font-size: 18px;
+    }
+
+    .fa-heart {
+        color: rgba(41, 41, 41, 0.151);
+        font-size: 18px;
+    }
+
+    .fa-heart:hover {
+        color: var(--cor-do-titulo);
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+          width: 100vw;
+        }
+        .main-title {
+            font-size: 40px;
+            width: 80%;
+        }
+
+        .main-text {
+            width: 100%;
+        }
+
+        .skills-container {
+            margin-left: 0;
+        }
+
+        .skill-title {
+            margin: 0.5em 0 1em 0;
+        }
+
+        .projects-container {
+            margin: 0 auto;
+            display: block;
+            width: 60%;
+        }
+
+        .contact-container {
+            margin-left: 0;
+        }
+
+        .form {
+            margin-left: 0;
+        }
+
+        .fa-brands {
+            font-size: 3em;
+        }
+
+        .skills {
+            display: block;
+
+        }
+
+        .skills-container {
+            flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .skill-title {
+            margin: auto;
+            text-align: center;
+        }
+        
+    }
