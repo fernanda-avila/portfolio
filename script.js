@@ -130,13 +130,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 window.addEventListener("keydown", function(event) {
-    // Verifica se a tecla pressionada é a barra de espaço
     if (event.key === " ") {
-        // Verifica se o foco está na textarea
         if (document.activeElement.tagName.toLowerCase() !== 'textarea') {
-            // Cancela o comportamento padrão da tecla (que pode ser scroll, por exemplo)
             event.preventDefault();
-            // Chama a função para iniciar o jogo
             startGame();
         }
     }
