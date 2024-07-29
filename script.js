@@ -130,10 +130,41 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 window.addEventListener("keydown", function(event) {
+    // Verifica se a tecla pressionada é a barra de espaço
     if (event.key === " ") {
+        // Verifica se o foco está na textarea
         if (document.activeElement.tagName.toLowerCase() !== 'textarea') {
+            
             event.preventDefault();
+           
             startGame();
         }
     }
 });
+
+// carrossel 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper('.swiper', {
+      
+      loop: true, 
+      autoplay: {
+        delay: 5000, 
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, 
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+      slidesPerView: 'auto', 
+      spaceBetween: 20, 
+    });
+  });
+  
