@@ -306,6 +306,21 @@ body {
     gap: 1em;
 }
 
+/* contact */
+
+.contact {
+    display: flex;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    text-align: end;
+    margin-top: 2em;
+    margin-left: 72%;
+    gap: 1em;
+}
+
 .form {
     display: flex;
     flex-direction: column;
