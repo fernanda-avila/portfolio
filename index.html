@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernanda Avila</title>
@@ -43,8 +49,8 @@
         <h1 class="main-title">Front-end &
             <br> UX Design</h1>
             <h3 class="surprise">Pressione espaço e tenha uma surpresa :)</h3>
-        <p class="main-text">Meu nome é Fernanda Avila e eu sou desenvolvedora Web e UX Designer. No momento estudo e estou cursando a formação de UX e UI da Cubos Academy, assim como a certificação do Google de mesmo tema. Participo também do projeto ONE (Oracle Next Education) da Alura, com foco em Front-End</p>
-        <a href="https://drive.google.com/file/d/1JibJN4FmOIgHFqaGK4mia3S9RW6PvzqS/view?usp=drive_link" class="curriculo" target="_blank">Acesse meu currículo!</a>
+        <p class="main-text">Meu nome é Fernanda Avila e sou desenvolvedora Web e UX Designer com uma paixão por criar soluções digitais que realmente fazem a diferença. Participei do programa ONE da Alura com a Oracle e sou formada em UX Design pela Cubos Academy e pelo Google Learning Program. Atualmente, estou aprofundando meus conhecimentos em Desenvolvimento de Sistemas pelo Senac RS. Estou sempre em busca de novos desafios e oportunidades para crescer na área de tecnologia. Seja bem-vindo!</p>
+        <a href="https://drive.google.com/file/d/1soDS1-SF4aGMx95uxzUAtJg0CC1LMRoY/view?usp=sharing" class="curriculo" target="_blank">Acesse meu currículo!</a>
     </main> 
             <hr class="separator">
        
@@ -68,6 +74,12 @@
                     <i class="fa-brands fa-react"></i>
                     <p class="skill-name">React</p>
                 </div>
+                
+                <div class="skill">
+                    <i class="fa-brands fa-node-js"></i>
+                    <p class="skill-name">Node.js</p>
+                </div>
+                
                 <div class="skill">
                     <i class="fa-brands fa-bootstrap"></i>
                     <p class="skill-name">Bootstrap</p>
@@ -85,12 +97,12 @@
                     <i class="fa-brands fa-figma"></i>
                     <p class="skill-name">Figma</p>
                 </div>
+
             </div>
             </div>
             </section>
 
             <hr class="separator">
-<!--     formação academica -->
 
             <section class="academica" id="academica">
                 <h2 class="section-title">Formação Acadêmica</h2>
@@ -110,47 +122,91 @@
                         <p class="academica-title">ONE - Oracle Next Education</p>
                         <p class="academica-description">Formação Front-End</p>
                     </div>
+                    <div class="academica">
+                        <img src="senac-logo.png" alt="Senac" class="academica-image">
+                        <p class="academica-title">Senac</p>
+                        <p class="academica-description">Téc. Desenvolvimento de Sistemas</p>
+                    </div>
+                    
                 </div>
             </section>
             <hr class="separator">
             <!-- projetos -->
             <section id="projects" class="projects">
-                <h2 class="section-title">Alguns Projetos</h2>
-                <div class="projects-container">
-                    <div class="project">
-                        <img src="projetos/clone-netflix.jpg" alt="Clone Netflix " class="project-image">
-                        <div class="project-info">
-                        <p class="project-title">Clone Netflix.</p>
-                        <a href="https://fernanda-avila.github.io/clone-netflix/" target="_blank" class="project-link">Deploy</a>
-                        <a href="https://github.com/fernanda-avila/clone-netflix" target="_blank" class="project-link">Repositório</a>
-                    </div>
-                    </div>
-                    <div class="project">
-                        <img src="projetos/clone-spotify.jpeg" alt="Clone Spotify" class="project-image">
-                        <div class="project-info">
-                        <p class="project-title">Clone Spotify</p>
-                        <a href="https://fernanda-avila.github.io/clone-spotify/" target="_blank" class="project-link">Deploy</a>
-                        <a href="https://github.com/fernanda-avila/clone-spotify" target="_blank" class="project-link" fa-regular fa-folder-open>Repositório</a>
-                    </div>
-                    </div>
-                    <div class="project">
-                        <img src="projetos/crypto-cat.jpeg" alt="CryptoCat" class="project-image">
-                        <div class="project-info">
-                        <p class="project-title">CryptoCat</p>
-                        <a href="https://fernanda-avila.github.io/cripto-cat/" target="_blank" class="project-link">Deploy</a>
-                        <a href="https://github.com/fernanda-avila/cripto-cat" target="_blank" class="project-link">Repositório</a>
-                    </div>
-                    </div>
-                    <div class="project">
-                        <img src="projetos/alura books.png" alt="Alura Books" class="project-image">
-                        <div class="project-info">
-                        <p class="project-title">Alura Books</p>
-                        <a href="https://fernanda-avila.github.io/alura-books/" target="_blank" class="project-link">Deploy</a>
-                        <a href="https://github.com/fernanda-avila/alura-books" target="_blank" class="project-link">Repositório</a>
-                    </div>
-                    </div>
-                </div>
-                </section>
+                <h2 class="section-title">Projetos</h2>
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="projetos/clone-netflix.jpg" alt="Clone Netflix" class="project-image">
+        <div class="project-info">
+          <p class="project-title">Clone Netflix</p>
+          <a href="https://fernanda-avila.github.io/clone-netflix/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/clone-netflix" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/clone-spotify.jpeg" alt="Clone Spotify" class="project-image">
+        <div class="project-info">
+          <p class="project-title">Clone Spotify</p>
+          <a href="https://fernanda-avila.github.io/clone-spotify/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/clone-spotify" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/crypto-cat.jpeg" alt="CryptoCat" class="project-image">
+        <div class="project-info">
+          <p class="project-title">CryptoCat</p>
+          <a href="https://fernanda-avila.github.io/cripto-cat/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/cripto-cat" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/alura books.png" alt="Alura Books" class="project-image">
+        <div class="project-info">
+          <p class="project-title">Alura Books</p>
+          <a href="https://fernanda-avila.github.io/alura-books/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/alura-books" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/Captura de tela 2024-05-20 192750.png" alt="Alura Books" class="project-image">
+        <div class="project-info">
+          <p class="project-title">AluraDARK</p>
+          <a href="https://alura-dark.vercel.app/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/AluraDARK" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/Captura de tela 2024-07-29 124707.png" alt="Alura Books" class="project-image">
+        <div class="project-info">
+          <p class="project-title">AluraFlix</p>
+          <a href="https://aluraflix-snowy.vercel.app/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/aluraflix" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="projetos/Captura de tela 2024-07-29 124916.png" alt="Alura Books" class="project-image">
+        <div class="project-info">
+          <p class="project-title">Organo</p>
+          <a href="https://alura-organo-curso-2-43zp.vercel.app/" target="_blank" class="project-link">Deploy</a>
+          <a href="https://github.com/fernanda-avila/alura-organo-curso-2" target="_blank" class="project-link">Repositório</a>
+        </div>
+      </div>
+      
+    </div>
+    
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+  
+            
+        
                 <hr class="separator">
                 <!-- contato -->
                 <section id="contact" class="contact">
@@ -174,10 +230,8 @@
                             <button type="submit" class="form-button">Enviar</button>
                         </form>
                     </div>
-
-<!--     rodapé -->
                     <footer class="footer">
-                        <p class="footer-text">Feito com <i class="fa-solid fa-heart"></i> por Fernanda Avila - 2024</p>
+                        <p class="footer-text">Feito com <i class="fa-solid fa-heart"></i> por Fernanda Avila</p>
 
 
     <script src="script.js"></script>
