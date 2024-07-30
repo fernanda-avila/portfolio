@@ -222,7 +222,7 @@ body {
     color: var(--cor-do-titulo);
     margin-bottom: 1em;
     font-weight: 400;
-    margin: 1em 0;
+    margin: 1em 1em;
 }
 
 .swiper {
@@ -289,6 +289,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.5);
+    padding:1em;
     border-radius: 50%;
 }
 
@@ -316,7 +317,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 2em auto;
+    margin: 2em 1em;
 }
 
 .form input,
