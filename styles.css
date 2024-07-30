@@ -162,6 +162,7 @@ body {
     display: flex;
     margin-top: 1em;
     align-items: center;
+    justify-content: space-between;
 }
 
 .skills-container {
@@ -192,7 +193,7 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: var(--cor-do-titulo);
-    margin: 0.5em 0;
+    margin: 0.5em -3em;
     text-decoration: none;
     font-weight: 400;
 }
@@ -210,7 +211,6 @@ body {
 
 .skills {
     display: flex;
-    justify-content: space-evenly;
 }
 
 /* section projetos */
@@ -356,7 +356,6 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 25px;
     cursor: pointer;
-    margin-left: 2em;
 }
 
 .form button:hover {
