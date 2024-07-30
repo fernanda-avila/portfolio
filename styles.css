@@ -158,10 +158,26 @@ body {
 
 /* skills */
 
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 1em;
+}
+
+.skill-title {
+    text-transform: uppercase;
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    color: var(--cor-do-titulo);
+    margin-left: 1em; /* Margin left for the title */
+    font-weight: 400;
+}
+
 .skills-container {
     display: flex;
-    flex-direction: row;
-    gap: 0.5em;
+    gap: 0.5em; /* Gap between skills */
+    align-items: center;
 }
 
 .fa-brands,
@@ -181,29 +197,15 @@ body {
     font-family: var(--fonte-titulo);
 }
 
-.skill-title {
-    text-transform: uppercase;
-    font-family: var(--fonte-titulo);
-    font-size: 24px;
-    color: var(--cor-do-titulo);
-    margin: 0.5em 1em;
-    text-decoration: none;
-    font-weight: 400;
-}
-
 .skill {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
+    align-items: center;
 }
 
 .skill:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
-}
-
-.skills {
-    display: flex;
 }
 
 /* section projetos */
@@ -395,8 +397,13 @@ footer {
         width: 100%;
     }
 
+    .skills-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .skills-container {
-        margin-left: 0;
+        justify-content: flex-start;
     }
 
     .skill-title {
@@ -427,7 +434,7 @@ footer {
 
     .skills-container {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
 
