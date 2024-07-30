@@ -312,7 +312,7 @@ body {
 
 .contact-container {
     display: flex;
-    text-align: right;
+    justify-content: end;
     margin: 2em 1em;
     gap: 1em;
 }
@@ -355,7 +355,6 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 25px;
     cursor: pointer;
-    margin-left: 2em;
 }
 
 .form button:hover {
