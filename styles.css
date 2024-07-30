@@ -305,14 +305,14 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background: #888; 
+    background-color: #888; 
     width: 12px;
     height: 12px;
     border-radius: 50%; 
 }
 
 .swiper-pagination-bullet-active {
-    background: #000; 
+    background-color: #000; 
 }
 
 .swiper-pagination-bullet:hover {
