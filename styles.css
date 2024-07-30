@@ -322,7 +322,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 2em 3em;
+    margin: 2em 5em;
 }
 
 .form input,
