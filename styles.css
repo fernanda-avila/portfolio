@@ -22,22 +22,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
 .name-header {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: #666;
-    margin-left: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 0;
     text-decoration: none;
     font-weight: 100;
 }
 
 .name-header:hover {
     color: var(--cor-do-titulo);
-    transition: 0.5s;
+    transition: color 0.5s, transform 0.5s;
     transform: scale(1.01);
 }
 
@@ -56,7 +55,7 @@ body {
 
 .menu-list li:hover {
     color: var(--cor-do-texto);
-    transition: 0.5s;
+    transition: color 0.5s, transform 0.5s;
     transform: scale(1.1);
 }
 
@@ -73,9 +72,7 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 22px;
     color: var(--cor-do-texto);
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 1em 1em 0;
     text-decoration: none;
     font-weight: 500;
 }
@@ -83,13 +80,13 @@ body {
 .curriculo:hover,
 .surprise:hover {
     color: var(--cor-do-titulo);
-    transition: 0.5s;
+    transition: color 0.5s, transform 0.5s;
     transform: scale(1.01);
 }
 
 .main-content {
     width: 95%;
-    margin: 3%;
+    margin: 3% auto;
 }
 
 .main-title {
@@ -119,9 +116,9 @@ body {
 
 .academica-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 1em 2em 1em 8em;
+    margin: 1em 2em;
     gap: 5em;
 }
 
@@ -136,21 +133,20 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 18px;
     color: var(--cor-do-titulo);
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-weight: 100;
 }
 
 .academica-title:hover,
 .academica-description:hover {
     color: var(--cor-do-texto);
-    transition: 0.5s;
+    transition: color 0.5s, transform 0.5s;
     transform: scale(1.1);
 }
 
 .academica-image:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: transform 0.5s, filter 0.5s;
     filter: brightness(60%);
 }
 
@@ -183,7 +179,7 @@ body {
 .fa-brands:hover,
 .fa-solid:hover {
     color: var(--cor-do-titulo);
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .skill-name {
@@ -196,7 +192,7 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: var(--cor-do-titulo);
-    margin: 0.5em 0 1em -330px;
+    margin: 0.5em 0;
     text-decoration: none;
     font-weight: 400;
 }
@@ -209,7 +205,7 @@ body {
 
 .skill:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 
 .skills {
@@ -226,7 +222,7 @@ body {
     color: var(--cor-do-titulo);
     margin-bottom: 1em;
     font-weight: 400;
-    margin: 1em 0 1em 7em;
+    margin: 1em 0;
 }
 
 .swiper {
@@ -246,17 +242,17 @@ body {
     width: 60%;
     height: 70%;
     border-radius: 15px;
+    margin-bottom: 1em;
 }
 
 .project-info {
     text-align: center;
     padding: 20px;
-    background-color:transparent;
+    background-color: transparent;
     color: var(--cor-do-texto);
     width: 60%;
     box-sizing: border-box;
     bottom: 0;
-    left: 30;
     border-radius: 15px;
     font-size: 30px;
     opacity: 0;
@@ -289,7 +285,18 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--cor-do-texto); 
+    color: var(--cor-do-texto);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--cor-do-titulo);
+    color: white;
+}
 
 /* contact */
 
@@ -301,24 +308,7 @@ body {
 .contact-container {
     display: flex;
     text-align: end;
-    margin-top: 2em;
-    margin-left: 72%;
-    gap: 1em;
-}
-
-/* contact */
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.contact-container {
-    display: flex;
-    text-align: end;
-    margin-top: 2em;
-    margin-left: 72%;
+    margin: 2em auto;
     gap: 1em;
 }
 
@@ -326,26 +316,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 2em 6em;
+    margin: 2em auto;
 }
 
-.form input {
+.form input,
+.form textarea {
     width: 400px;
-    height: 50px;
     border: none;
     border-bottom: 1px solid var(--cor-texto-suave);
     border-radius: 5px;
     font-family: var(--fonte-texto);
-    font-size: var(--cor-do-texto);
+    font-size: 16px;
+    padding: 0.5em;
 }
 
 .form textarea {
-    width: 400px;
     height: 130px;
-    border: none;
-    border-bottom: 1px solid var(--cor-texto-suave);
-    border-radius: 5px;
-    font-size: 20px;
 }
 
 .form label {
@@ -357,8 +343,8 @@ body {
 .form button {
     width: 100px;
     height: 40px;
-    background-color: transparent;
-    color: var(--cor-do-texto);
+    background-color: var(--cor-do-titulo);
+    color: white;
     border: none;
     border-radius: 5px;
     font-family: var(--fonte-titulo);
@@ -368,8 +354,9 @@ body {
 }
 
 .form button:hover {
+    background-color: var(--cor-do-texto);
     color: var(--cor-do-titulo);
-    transition: 0.5s;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
     transform: scale(1.1);
 }
 
@@ -377,8 +364,8 @@ body {
 
 footer {
     display: flex;
-    justify-content: right;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     color: var(--cor-do-texto);
     height: 50px;
     font-family: var(--fonte-titulo);
@@ -392,7 +379,7 @@ footer {
 
 .fa-heart:hover {
     color: var(--cor-do-titulo);
-    transition: 0.5s;
+    transition: color 0.5s, transform 0.5s;
     transform: scale(1.1);
 }
 
