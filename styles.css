@@ -176,7 +176,7 @@ body {
 
 .skills-container {
     display: flex;
-    gap: 0.5em; /* Gap between skills */
+    gap: 20px; /* Gap between skills */
     align-items: center;
 }
 
