@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Configuração do canvas e do contexto
     var canvas = document.getElementById("game-canvas");
     var ctx = canvas.getContext("2d");
 
+    // Configuração do dinossauro e do obstáculo
     var dino = {
         x: 50,
         y: canvas.height - 40,
@@ -13,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     var obstacle = {
-        x: canvas.width * 0.7, // 70% of the canvas width
+        x: canvas.width * 0.7, // 70% da largura do canvas
         y: canvas.height - 40,
         width: 20,
         height: 40,
-        speed: 5 // 5 pixels per frame
+        speed: 5 // 5 pixels por frame
     };
 
-    var gravity = 3; // 3 pixels per frame
+    var gravity = 3; // 3 pixels por frame
     var score = 0;
     var gameStarted = false;
     var gameInterval;
@@ -93,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function restartGame() {
-        obstacle.x = canvas.width * 0.3;
+        obstacle.x = canvas.width * 0.7;
         dino.y = canvas.height - 40;
         score = 0;
         document.getElementById("score").innerText = score;
@@ -120,51 +122,40 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     }
-    drawDino();
-    drawObstacle();
+
+    // Inicia o jogo com a tecla espaço
     window.addEventListener("keydown", function(event) {
         if (event.key === " ") {
-            startGame();
+            if (document.activeElement.tagName.toLowerCase() !== 'textarea') {
+                event.preventDefault();
+                startGame();
+            }
         }
-        
     });
-});
-window.addEventListener("keydown", function(event) {
-    // Verifica se a tecla pressionada é a barra de espaço
-    if (event.key === " ") {
-        // Verifica se o foco está na textarea
-        if (document.activeElement.tagName.toLowerCase() !== 'textarea') {
-            
-            event.preventDefault();
-           
-            startGame();
-        }
-    }
-});
 
-// carrossel 
+    // Inicializa o jogo
+    drawDino();
+    drawObstacle();
 
-document.addEventListener("DOMContentLoaded", () => {
+    // Configuração do carrossel
     const swiper = new Swiper('.swiper', {
-      
-      loop: true, 
-      autoplay: {
-        delay: 5000, 
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true, 
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-      },
-      slidesPerView: 'auto', 
-      spaceBetween: 20, 
+        loop: true, 
+        autoplay: {
+            delay: 5000, 
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, 
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+        slidesPerView: 'auto', 
+        spaceBetween: 20, 
     });
-  });
-  
+});
