@@ -299,6 +299,27 @@ body {
     color: white;
 }
 
+.swiper-pagination {
+    bottom: 10px; 
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    background: #888; 
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+}
+
+.swiper-pagination-bullet-active {
+    background: #000; 
+}
+
+.swiper-pagination-bullet:hover {
+    background: #555; 
+}
+
+
 /* contact */
 
 .contact {
