@@ -170,7 +170,7 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: var(--cor-do-titulo);
-    margin-left: 1em; /* Margin left for the title */
+    margin-left: 1em; 
     font-weight: 400;
 }
 
@@ -178,6 +178,7 @@ body {
     display: flex;
     gap: 20px; /* Gap between skills */
     align-items: center;
+    margin-right: 20px;
 }
 
 .fa-brands,
