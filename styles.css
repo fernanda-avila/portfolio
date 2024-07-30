@@ -158,13 +158,6 @@ body {
 
 /* skills */
 
-.skill {
-    display: flex;
-    margin-top: 1em;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .skills-container {
     display: flex;
     flex-direction: row;
@@ -193,7 +186,7 @@ body {
     font-family: var(--fonte-titulo);
     font-size: 24px;
     color: var(--cor-do-titulo);
-    margin: 0.5em -3em;
+    margin: 0.5em 0;
     text-decoration: none;
     font-weight: 400;
 }
@@ -201,7 +194,7 @@ body {
 .skill {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 0; /* Corrigido para alinhar com a margem dos outros elementos */
 }
 
 .skill:hover {
@@ -293,7 +286,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding:1em;
+    padding: 1em;
     border-radius: 50%;
 }
 
