@@ -269,6 +269,10 @@ body {
     margin-bottom: 10px;
 }
 
+.swiper-pagination {
+    color: #000000ee;
+}
+
 .project-link {
     font-size: 16px;
     font-family: var(--fonte-texto);
