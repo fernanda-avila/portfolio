@@ -360,7 +360,7 @@ body {
 }
 
 .form button:hover {
-    background-color: var(--cor-do-texto);
+    background-color: transparent;
     color: var(--cor-do-titulo);
     transition: background-color 0.5s, color 0.5s, transform 0.5s;
     transform: scale(1.1);
